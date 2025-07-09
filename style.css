@@ -178,6 +178,7 @@ i {
 .typing-text {
   font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: bold;
+  margin-bottom: 15px;
 }
 @keyframes blink {
   0%, 50% {
@@ -197,15 +198,21 @@ i {
   box-shadow: 0 0 12px var(--txt-color-2);
   animation: blink 1.0s steps(1, start) infinite;
 }
+.title-video {
+	text-align: center;
+	font-size: clamp(1rem, 2vw, 2rem);
+	color: var(--txt-color-2);
+	margin-bottom: clamp(10px, 2vw, 20px);
+}
 .main-video {
 	width: 100%;
 	height: auto;
 	display: block;
-	max-width: 100%;
+	max-width: 85%;
 	border-radius: clamp(6px, 1vw, 10px);
 	box-shadow: 0 0 12px var(--brdrshdw-color);
 	border: 1px solid var(--brdr-color);
-	margin-top: 20px;
+	margin: auto;
 }
 #artikel h3 {
   color: var(--txt-color-2);
